@@ -1,0 +1,2097 @@
+//global
+body {
+    font-family: "Marcellus", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #333333;
+    background-color: #F9F8F6;
+    margin: 0 auto;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease-in-out;
+    display: inline-block;
+}
+
+a:hover {
+    transform: translateY(-5px);
+}
+
+ul {
+    margin-bottom: 0;
+}
+
+h2 {
+    margin-bottom: 0;
+}
+
+h3 {
+    margin-bottom: 0;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.pagetop {
+    position: fixed;
+    display: none;
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    right: 5%;
+    bottom: 4%;
+    background: #949E33;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100000;
+
+    @media screen and (min-width: 1024px) {
+        height: 80px;
+        width: 80px;
+        right: 4.5%;
+        bottom: 7.5%;
+    }
+
+    .fa-chevron-right {
+        transform: rotate(-90deg);
+        color: #fff;
+        font-size: 20px;
+        
+    @media screen and (min-width: 1024px) {
+        font-size: 40px;
+    }
+    }
+}
+
+.opacity {
+    opacity: 0.3;
+}
+
+.title {
+    color: #CA7F13;
+    position: relative;
+    z-index: 10;
+    font-size: 48px;
+    letter-spacing: 0.04em;
+    line-height: 1.25;
+    text-transform: uppercase;
+    overflow-x: hidden;
+    
+    p.subtitle {
+        color: #CA7F13;
+        letter-spacing: 0.04em;
+        font-family: "Yu Mincho" , "游明朝体" , "YuMincho" , serif;
+        font-size: 12px;
+        line-height: 0.667;
+        margin-bottom: 0;
+        padding-top: 6px;
+        @media screen and (min-width: 1024px) {
+            padding-top: 0;
+        }
+    }
+
+    &::after {
+        display: block;
+        font-size: 72px;
+        letter-spacing: 0.08em;
+        line-height: 1.4;
+        color: #CA7F1314;
+        font-family: "Parisienne", "cursive";
+        font-weight: 400;
+        font-style: normal;
+        position: absolute;
+        margin: 0 auto;
+        z-index: 0;
+        top: -20px;
+        transform: translateX(50%);
+        text-transform: capitalize;
+    }
+
+    @media screen and (min-width: 1024px) {
+    font-size: 84px;
+    line-height: 1.262;
+    width: 80%;
+    height: 188px;
+    
+    p.subtitle {
+        font-size: 14px;
+        line-height: 1;
+    }
+
+    &::after {
+        font-size: 120px;
+        letter-spacing: 0.05em;
+    }
+    }
+}
+
+.pc-only {
+    display: none;
+}
+
+@media screen and (min-width: 758px) {
+.mobile-only {
+    display: none;
+}
+
+.pc-only {
+    display: block;
+}
+}
+
+#breadcrumbs {
+    margin: 3%;
+    color: #CA7F13;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    width: 96%;
+    font-family: "Yu Gothic" , "游ゴシック" , "YuGothic" , sans-serif;
+    
+@media screen and (min-width: 758px) {
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    margin: 24px 0 0 36.5px;
+}
+}
+
+#breadcrumb {
+    font-family: "Yu Gothic" , "游ゴシック" , "YuGothic" , sans-serif;
+    }
+
+.breadcrumb {
+    margin: 0;
+    color: #CA7F13;
+    font-size: 14px;
+    letter-spacing: 0.1em;    
+    font-family: "Yu Gothic" , "游ゴシック" , "YuGothic" , sans-serif;
+    
+@media screen and (min-width: 758px) {
+    font-size: 18px;
+}
+
+    a {
+        padding-right: 6px;
+    }
+}
+
+span.breadcrumb_last {
+    padding-left: 2%;
+    @media screen and (min-width: 758px) {
+        padding-left: 0;
+    }
+}
+
+p.bread-space {
+    padding: 0 11px;
+    margin: 0
+}
+p.bread-space2 {
+    padding: 0 0 0 11px;
+    margin: 0
+}
+
+.top {
+    width: 100%;
+    height: 200px;
+    
+    @media screen and (min-width: 768px) {
+        height: 360px;
+    }
+
+    &__h2 {
+        background-color: #D4CEBE;
+        font-size: 32px;
+        display: table;
+        margin: 0;
+        width: 100%;
+        height: 200px;
+
+        @media screen and (min-width: 768px) {
+            height: 360px;
+        }
+
+    &--title {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        font-size: 32px;
+        color: #CA7F13;
+        letter-spacing: 0.1em;
+        line-height: 0.438;
+        text-transform: uppercase;
+
+    @media screen and (min-width: 768px) {
+        line-height: 0.175;
+        font-size: 80px;
+    }
+    }
+}
+}
+
+.page {
+    display: block;
+    width: 100%;
+    position: relative;
+    z-index: -10; 
+}
+
+.parallax {
+width: 100%;
+height: auto;
+
+@media screen and (min-width: 768px) {
+    height: 600px;
+}
+
+    &__inner {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+        
+
+    @media screen and (min-width: 768px) {
+        height: 600px;
+        }
+    }
+}
+
+.zindex {
+    position: relative;
+    z-index: 2;  
+}
+
+.full-bg {
+    background-color: #F9F8F6;
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 10000; 
+}
+
+.post-categories {
+    position: unset;
+
+    ul {
+        padding: 0;
+    }
+}
+
+.notfound {
+    @media screen and (min-width:1040px) {
+        margin-top: 173px;
+    }
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    color: #ca7f13;
+    @media screen and (min-width:1024px) {
+        margin: 1% 0 0 -1%;
+        }
+
+    li {
+        margin: 0 5px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    i {
+        transform: scale(0.7);
+        font-size: 16px;
+        @media screen and (min-width:1024px) {
+            font-size: 24px;
+            }
+    }
+
+    .nav-links {
+        font-size: 12px;
+        width: 150px;
+        margin-left: 29%;
+
+        @media screen and (min-width:1024px) {
+            font-size: 32px;
+            width: 250px;
+        }
+    }
+
+    .next {
+        margin-left: -5px;
+        padding-right: 0;
+        @media screen and (min-width:1024px) {
+            
+        }
+    }
+}
+
+.page-numbers {
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    font-family: "Marcellus", serif;
+    padding-right: 7%;
+
+    @media screen and (min-width:1440px) {
+    font-size: 32px;
+    letter-spacing: 0.1em;
+    padding-right: 5.5%;
+    }
+}
+
+/*フェードイン */
+.fadeInAnime1000ms {
+    animation-name: fadeIn1000ms;
+}
+.fadeIn1000ms {
+    animation-delay: 45ms;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    transform: translateY(50px);
+    opacity: 0;
+}
+@keyframes fadeIn1000ms {
+    0% {
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+//header
+.header {
+    width: 99%;
+    height: 80px;
+    height: auto;
+    margin-bottom: 3%;
+    
+    @media screen and (min-width:768px) {
+        position: fixed;
+        top: 0;
+        z-index: 100000;
+        margin-bottom: 0;
+        height: 170px;
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5.4% 5%;
+        width: 100%;
+        margin: 0 auto;
+        color: #54372D;
+
+        @media screen and (min-width:768px) {
+            margin: 2.8% 0 0 3%;
+            height: 70px;
+            width: 93%;
+            padding: 0;
+        }            
+    }
+
+    &__h1 {
+        margin-bottom: 0;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+#hamburger__nav{
+    /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+    position:fixed;
+    z-index: 100001;
+    /*ナビのスタート位置と形状*/
+	top:-120%;
+    left:0;
+	width:100%;
+    height: 100%;/*ナビの高さ*/
+    /*動き*/
+	transition: all 0.6s;
+
+    &.panelactive{
+        top: 0;
+    }
+
+    ul.hamburger__nav--list {
+        /*ナビゲーション天地中央揃え*/
+        position: absolute;
+        z-index: 999;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+        height: 100%;
+        color: #CA7F13;
+        padding: 144px 0 0 60px;
+        background-color: #D4CEBE;
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+
+    li{
+        font-size: 16px;
+        letter-spacing: 0.05em;
+        font-weight: bold;
+        list-style: none;
+        text-align: left;
+        padding: 12px 0 0 0;
+        text-decoration: none;
+        display: block;
+        position: relative;
+    }
+    
+    li::after {
+        position: absolute;
+        display: block;
+        right: 10px;
+        bottom: 15px;
+        color: #93C572;
+        width: 25px;
+    }
+}
+
+.header__list--btn {
+    position: relative;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    font-family: "Yu Mincho" , "游明朝体" , "YuMincho" , serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #FFFFFF;
+    padding: 7px 10px;
+    letter-spacing: 0.1em;
+    background-color: #949E33;
+	border-radius: 40px;
+    z-index: 100002;
+
+    span {
+        display: inline-block;
+        transition: all .4s;/*アニメーションの設定*/
+        position: absolute;
+        height: 1px;
+        border-radius: 3px;
+        background-color: #FFFFFF;
+    }
+
+    span:nth-of-type(1) {
+        top: 11px;
+        right: 10px;
+        width: 12px;
+    }
+
+    span:nth-of-type(2) {
+        top: 15px;
+        right: 10px;
+        width: 12px;
+    }
+
+    span:nth-of-type(3) {
+        top: 19px;
+        right: 10px;
+        width: 12px;
+        }
+
+    &.active {
+        background: none;
+        color: transparent
+    }
+    /*activeクラスが付与されると線が回転して×に*/
+    
+    &.active span:nth-of-type(1) {
+        top: 9px;
+        left: 11px;
+        transform: translateY(6px) rotate(-45deg);
+        width: 30%;
+    }
+    
+    &.active span:nth-of-type(2) {
+        opacity: 0;
+    }
+    
+    &.active span:nth-of-type(3){
+        top: 21px;
+        left: 11px;
+        transform: translateY(-6px) rotate(45deg);
+        width: 30%;
+    }
+}
+.header__list--logo.active {
+    background-color: #949E33;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.header__h1--response {
+    display: none;
+}
+.hamburger__nav--response {
+    display: none;
+}
+
+.fa-calendar-alt::before {
+    padding-right: 26px;
+}
+
+@media screen and (min-width: 768px) {
+.header {
+    width: 100%;
+
+    &__h1 {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 0;
+
+        img {
+        width: 64px;
+        height: 64px;
+        }
+
+        &--response {
+            text-transform: uppercase;
+            display: block;
+            font-size: 28px;
+            letter-spacing: 0.2em;
+            margin-bottom: 0;
+            width: 187px;
+            line-height: 1.25;
+        }
+
+    }
+}
+}
+
+@media screen and (min-width: 1024px) {
+.header {
+    width: 99%;
+
+    &__list {
+    display: none;
+    }
+    
+#hamburger__nav {
+    display: none;
+}
+
+.hamburger__nav--response {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8%;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+
+    li a:hover {
+        transform: translateY(-5px);
+    }
+
+    .nav_reserve {
+    background-color: #949E33;
+    width: 200px;
+    height: 50px;
+    color: #ffff;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    line-height: 1.6;
+    margin-bottom: 0;
+    font-family: "Yu Mincho", "游明朝体", "YuMincho", serif;
+    font-weight: 600;
+    padding-right: 40px;
+    }
+}
+}
+}
+
+//headerFV
+.headerFV {
+    background-image: url(img/fv_bg-sp.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 734px;
+    width: 100%;
+    height: auto;
+    display: table;
+    margin-top: -23%;
+
+    &__h2 {
+        color: #FFFFFF;
+        text-shadow: 4px 4px 10px #00000029;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: left;
+        padding: 106% 0 51% 4%;
+        letter-spacing: 0.1em;
+        font-family: "Yu Mincho" , "游明朝体" , "YuMincho" , serif;
+        font-size: 32px;
+        line-height: 1.5;
+        font-weight: lighter;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+.headerFV {
+    background-image: url(img/fv_bg-pc.jpg);
+    background-size: contain;
+    background-position: bottom;
+    margin-top: -10.5%;
+    @media screen and (min-width: 1440px) {
+        margin-top: -5.5%;
+    }
+
+    &__h2 {
+        letter-spacing: 0.1em; 
+        font-size: 64px;
+        padding: 30% 0 24% 2.5%;
+    }
+}
+}
+
+//news
+.news {
+    background-color: #F9F8F6;
+    padding: 23% 0 27% 0;
+    width: 84%;
+    height: auto;
+    margin: 0 auto;
+
+    &__inner {
+        padding-left: 2%;
+    }
+
+@media screen and (min-width: 768px) {
+    width: 75%;
+    padding: 9% 0 12% 0;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        padding-bottom: 2.5%;
+        padding-left: 0;
+    }
+}
+
+    .title {
+        padding-bottom: 11%;
+        text-transform: capitalize;
+        
+    @media screen and (min-width: 768px) {
+        padding-bottom: 0;
+    }
+    .subtitle {
+        padding-top: 6px;
+    }
+    }
+
+    @media screen and (min-width: 768px) {
+        .title {
+            border-bottom: none;
+        .subtitle {
+            padding-top: 0;
+            padding-bottom: 8px;
+        }
+        }
+    }
+
+    .title::after {
+        content: "News";
+        top: -26px;
+        left: -1%;
+    }
+    @media screen and (min-width: 768px) {
+        .title::after {
+            letter-spacing: 0.1em;
+            left: -1%;
+            top: 10px;
+        }
+    } 
+
+    &__blog {
+        border-top: 1px solid #54372D;
+
+        &--inner {
+        border-bottom: 1px solid #54372D;
+        padding: 8.5% 0 4.7% 0;
+        color: #54372D;
+        }
+        
+        .news__category {
+        padding: 4% 0 0 0;
+    }
+    }
+    @media screen and (min-width: 768px) {
+    &__blog {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        border-left: 1px solid #54372D;
+        border-top: none;
+
+        &--inner {
+        width: calc(100% / 3);
+        border-right: 1px solid #54372D;
+        border-bottom: none;
+        padding: 19.5px;
+        padding-top: 16.5px;
+        }
+    }
+    }
+
+    .post-categories {
+        position: unset;
+        font-size: 14px;
+        letter-spacing: 0.1em;
+        line-height: 1.286;
+        position: unset;
+        color: #54372D;
+        text-align: left;
+        padding-left: 0;
+        text-transform: capitalize;
+        margin-top: -29px;
+        padding: 1%;
+    }
+
+    &__date {
+        padding-bottom: 6px;
+        font-family: "Yu Gothic" , "游ゴシック" , "YuGothic" , sans-serif;
+        font-size: 14px;
+        letter-spacing: 0.1em;
+        line-height: 1.571;
+        font-weight: bold;
+    }
+
+    &__title {
+        font-family: "Yu Gothic" , "游ゴシック" , "YuGothic" , sans-serif;
+        font-size: 18px;
+        letter-spacing: 0.1em;
+        line-height: 1.5;
+        font-weight: bold;
+    }
+
+    &__item--more {
+        width: 120px;
+        height: 30px;
+        background-color: #949E33;
+        border-radius: 30px;
+        color: #FFFFFF;
+        font-weight: 600;
+        font-family: "Yu Mincho" , "游明朝体" , "YuMincho" , serif;
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 16.5px auto 0 auto;
+
+        &--response {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+.news {
+    &__response {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        a {
+            text-transform: capitalize;
+        }
+    }
+
+    &__item--more {
+        display: none;
+        text-transform: capitalize;
+
+        &--response {
+            width: 120px;
+            height: 30px;
+            background-color: #949E33;
+            border-radius: 30px;
+            color: #FFFFFF;
+            font-weight: 600;
+            font-family: "Yu Mincho" , "游明朝体" , "YuMincho" , serif;
+            font-size: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            line-height: 1.625;
+            letter-spacing: 0.1em;
+            text-transform: capitalize;
+
+            @media screen and (min-width: 1024px) {
+                width: 160px;
+                height: 40px;
+                margin-bottom: 1%;
+            }
+        }
+    }
+}
+}
+
+
+//concept
+.concept {
+    padding: 0 0 120px 0;
+    width: 85%;
+    height: auto;
+    margin: 0 auto;
+    @media screen and (min-width: 768px) {
+        padding-bottom: 200px;
+        width: 83.4%;
+        }
+
+    &__inner--item {
+        padding: 0 0 21% 0;
+
+        img {
+            width: 100%;
+            height: auto;
+            max-width: 865px;
+        }
+            
+            &--response {
+                display: none;
+        }
+    }
+
+    .title {
+        font-family: "Marcellus", serif;
+        padding-bottom: 2%;
+        @media screen and (min-width: 768px) {
+            padding-bottom: 1.5%;
+        }
+    }
+
+    .title::after {
+        content: "Concept";
+        top: -25px;
+        left: -15%;
+    @media screen and (min-width: 768px) {
+        top: 15px;
+        left: -10%;
+    }
+}
+
+    @media screen and (min-width: 768px) {
+        &__inner {
+            width: 100%;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            flex-direction:row-reverse;
+            padding-bottom: 77px;
+
+        &--item {
+            display: none;
+            margin-left: -14%;
+            margin-top: 5px;
+            
+            &--response {
+                display: block;
+                position: relative;
+                text-align: right;
+                width: 100%;
+
+            img{
+                width: 100%;
+                height: auto;
+                max-width: 865px;
+                max-height: 680px;
+            }
+        }
+
+            &--title {
+                position: absolute;
+                width: 84%;
+                margin: 0 auto;
+                margin-top: -4.5%;
+            }
+        }
+    }
+    
+        .title::after {
+            top: -40px;
+            left: -7%;
+        }
+    }
+
+
+    &__h3 {
+        color: #CA7F13;
+        letter-spacing: 0.1em;
+        line-height: 2;
+        padding-bottom: 36px;
+        padding-left: 3.2%;
+        position: relative;
+        font-family: "Yu Mincho" , "游明朝体" , "YuMincho" , serif;
+        font-size: 18px;
+        margin-top: 11%;
+
+        @media screen and (min-width: 1024px) {
+            font-size: 28px;
+            letter-spacing: 0.1em;
+            padding-left: 0;
+            position: absolute;
+            z-index: 1;
+            padding-bottom: 0;
+            margin-top: 1%;
+        }
+
+        &::after {
+            position: absolute;
+            display: inline-block;
+            content: url(img/top-concept_02-sp.jpg);
+            width: 108px;
+            height: 245px;
+            right: -1%;
+            bottom: 45px;
+
+            @media screen and (min-width: 768px) {
+                display: none;
+            }
+        }
+    }
+
+    &__inner {
+        color: #54372D;
+        font-family: "Yu Gothic" , "游ゴシック" , "YuGothic" , sans-serif;
+        font-size: 16px;    
+        letter-spacing: 0.1em;
+        line-height: 2;
+        padding: 0 0 0 1%;
+        
+        &--response--item {
+            display: none;
+        }
+        
+        @media screen and (min-width: 768px) {
+        font-size: 18px;
+        line-height: 2;
+        padding: 0;
+        }
+
+        &--more {
+            text-align: right;
+            letter-spacing: 0.1em;
+            color: #54372D;
+            position: relative;
+            font-family: "Yu Mincho" , "游明朝体" , "YuMincho" , serif;
+            font-size: 18px;
+            text-transform: capitalize;
+            margin-bottom: 0px;
+            margin-top: 16px;
+            padding:0 6% 0 0;
+            @media screen and (min-width: 768px) {
+                padding: 0 1.5% 0 0;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            &--response {
+                display: flex;
+                justify-content: center;
+                align-items: start;
+                gap: 4.5%;
+                margin-top: 6.5%;
+
+                &--item {
+                    display: block;
+                    width: 91%;
+                    padding-top: 4px;
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.arrow {
+    position: absolute;
+    right: 1%;
+    bottom: 8%;
+    width: 122px;
+    height: 5px;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    transform: skew(45deg);
+
+    @media screen and (min-width: 768px) {
+        right: 0.5%;
+        bottom: 0;
+    }
+}
+
+//feature
+.feature {
+    background-color: #464646;
+    text-align: center;
+    padding: 0 0 15% 0;
+    position: relative;
+    
+    .title {
+        padding-bottom: 30px;
+        position: absolute;
+        z-index: 10;
+        right: 0;
+        left: 0;
+        top: 60px;
+        text-transform: uppercase;
+    }
+
+    .title::after {
+        content: "Feature";
+        top: -35px;
+        right: 55%;
+
+    }
+
+    &__inner {
+        color: #CA7F13;
+        padding-top: 88px;
+
+    &--item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+        &--h3 {
+            font-size: 14px;
+            letter-spacing: 0.1em;
+            padding: 0px 0 18px 0;
+            margin-top: 7%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-transform: uppercase;
+        
+            &:before, &:after {
+                display: block;
+                border-top: 1px solid #CA7F13;;
+                content: "";
+                width: 28%; /* 線の長さ */
+            }
+            &:before {
+                margin-right: 5%; /* 文字の右隣 */
+            }
+            &:after {
+                margin-left: 3%; /* 文字の左隣 */
+            }
+        }
+
+        &--title {
+            font-family: "游ゴシック";
+            font-size: 18px;
+            letter-spacing: 0.1em;
+            padding-bottom: 23px;            
+        }
+
+        &--txt {
+            font-family: "Yu Gothic" , "游ゴシック" , "YuGothic" , sans-serif;
+            font-size: 14px;
+            line-height: 2;
+            letter-spacing: 0.1em;
+            width: 84%;
+            margin: 0 auto;
+            @media screen and (min-width: 375px) {
+                width: 100%;
+            }
+        }
+    }
+    @media screen and (min-width: 1024px) {
+        display: none;
+    }
+}
+
+//feature
+.feature {
+    &__inner {
+        width: 100%;
+        margin: 0 -10px;
+    }
+    
+    &__response {
+    display: none;
+
+    .title {
+        margin: 0 auto -4.6% auto;
+
+        &::after {
+            content: "Feature";
+            top: 2%;
+            right: 50%;
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        display: block;
+        width: 100%;
+        height: 850px;
+        background-color: #464646;
+        text-align: center;
+        padding: 2.5% 0 3% 0;
+    }  
+
+    
+    @media screen and (min-width: 1441px) {
+        height: auto;
+    }
+}
+
+    &__container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &--list {
+            width: 26%;
+            height: auto;
+            margin-left: 5.4%;
+            padding: 0 0 2% 0;
+
+            &--title {
+                font-family: "Yu Mincho" , "游明朝体" , "YuMincho" , serif;
+                color: #CA7F13;
+                font-size: 18px;
+                letter-spacing: 0.1em;
+                line-height: 2;
+                text-align: left;
+                display: flex;
+                align-items: center;
+                justify-content: start;
+
+                span {
+                    font-size: 24px;
+                    line-height: 1.625;
+                    padding-right: 5.5%;
+                }
+            }
+
+            &--title2 {
+                font-family: "Yu Mincho" , "游明朝体" , "YuMincho" , serif;
+                color: #CA7F13;
+                font-size: 18px;
+                letter-spacing: 0.1em;
+                line-height: 2;
+                text-align: left;
+                display: flex;
+                align-items: center;
+                justify-content: start;
+
+                span {
+                    font-size: 24px;
+                    line-height: 1.625;
+                    padding-right: 5.5%;
+                }
+            }
+
+            &--title3 {
+                font-family: "Yu Mincho" , "游明朝体" , "YuMincho" , serif;
+                color: #CA7F13;
+                font-size: 18px;
+                letter-spacing: 0.1em;
+                line-height: 1.5;
+                text-align: left;
+                display: flex;
+                align-items: start;
+                justify-content: start;
+
+                span{
+                    font-size: 24px;
+                    line-height: 1.625;
+                    padding-right: 5.5%;
+                }
+            }
+
+            .feature-padding {
+                padding: 44px 0;
+            }
+        }
+
+        &--item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+        @media screen and (min-width: 1024px) {
+            width: 35%;
+            height: auto;
+            object-fit: cover
+        }
+        }
+
+        &--txt {
+            padding-left: 32px;
+            color: #CA7F13;
+            font-size: 18px;
+            letter-spacing: 0.1em;
+            @media screen and (min-width: 1024px) {
+                margin: 8.5%  0 auto 0;
+                width: 32%;
+                height: auto;
+                padding-left: 0px;
+                padding-right: 1.5%;
+            }
+
+            &--h3 {
+                text-transform: uppercase;
+                font-size: 14px;
+                letter-spacing: 0.1em;
+                    line-height: 1.929;
+
+                @media screen and (min-width: 1024px) {
+                    font-size: 18px;
+                    line-height: 1.5;
+                }
+                
+                &::after {
+                display: block;
+                content: "";
+                border-bottom: 3px solid #CA7F13;
+                width: 24px;
+                padding-top: 21.5px;
+                margin: 0 auto;
+            }
+            }
+
+            &--title {
+                font-family: "Yu Mincho" , "游明朝体" , "YuMincho" , serif;
+                font-size: 18px;
+                letter-spacing: 0.1em;
+                line-height: 2;
+                padding: 15px 0 49px 0;
+                @media screen and (min-width: 1024px) {
+                    font-size: 24px;
+                    line-height: 1.5;
+                    padding: 18px 25px 44px 0;
+            }
+            }
+
+            &--inner {
+                font-family: "Yu Gothic" , "游ゴシック" , "YuGothic" , sans-serif;
+                font-size: 14px;
+                letter-spacing: 0.1em;
+                line-height: 2;
+                @media screen and (min-width: 1024px) {
+                    font-size: 18px;
+                    padding-right: 3px;
+            }
+            }
+        }
+    }    
+}
+
+#feature-slick {
+    max-width:800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#feature-response-slick .slick-slide {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.slick-slide img {
+    width: 90%;
+    height: auto;
+}
+
+//price
+.price {
+    padding: 34% 0 40% 0;
+    width: 84%;
+    height: auto;
+    margin: 0 auto;
+    @media screen and (min-width: 1024px) {
+        padding: 12% 0 11% 0;
+        width: 83.4%;
+        }
+
+    .title {
+        padding-bottom: 14%;
+        overflow: hidden;
+        width: 107%;
+    }
+
+    .title::after {
+        content: "Price Menu";
+        top: -26%;
+        left: -22%;
+        letter-spacing: 0em;
+        @media screen and (min-width: 1024px) {
+            left: -16%;
+            top: 3%;
+            }
+    }
+
+    &__list {
+        padding: 1% 0 0 0;
+    @media screen and (min-width: 1024px) {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 802px;
+        margin-left: auto;
+        padding:0;
+    }
+
+    .price__border {
+        border-bottom: 1px solid #CA7F13;
+
+        @media screen and (min-width:1024px) {
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    } 
+        &--inner {
+            font-family: "Marcellus", serif;
+            font-size: 36px;
+            letter-spacing: 0.03em;
+            line-height: 0.389;
+            height: 81px;
+            width: auto;
+            padding-left: 4.5px;
+            display: flex;
+            justify-content: start;
+            align-items: center;    
+            color: #CA7F13;
+            text-transform: capitalize;
+            padding-top: 2%;
+
+            @media screen and (min-width:1024px) {
+                letter-spacing: 0.04em;
+                line-height: 0.389;
+                height: 85px;
+            }
+            
+            span {
+                font-family: "Yu Mincho" , "游明朝体" , "YuMincho" , serif;
+                font-size: 14px;
+                padding-left: 7%;
+                letter-spacing: 0.04em;
+                padding-top: 13px;
+                @media screen and (min-width:768px) {
+                    padding-top: 18px;
+                    padding-left: 4%;
+                }
+            }
+
+            .letterspace {
+                letter-spacing: 0.04em;
+                line-height: 0.389;
+                font-size: 36px;
+                padding: 0;
+                text-transform: none;
+                font-family: "Marcellus", serif;
+
+                @media screen and (min-width:1024px) {
+                font-size: 48px;
+                }
+            }
+
+            .fa-chevron-right{
+                margin-left: auto;
+                margin-right: 5%;
+                font-size: 26px;
+
+                @media screen and (min-width:1024px) {
+                    margin-right: 22px;
+                    font-size: 21px;
+                }
+            }
+
+        @media screen and (min-width:1024px) {
+            font-size: 48px;
+            letter-spacing: 0.04em;
+            width: 400px;
+            height: 82px;
+            padding-left: 12.5px;
+        }
+    }
+    }
+}
+    .response {
+        display: none;
+    }
+    @media screen and (min-width:1024px) {
+    .normal {
+        display: none;
+    }
+    .response {
+        display: flex;
+
+        .price__list--inner span {
+            padding-top: 27px;
+        }
+    }
+    }
+
+
+@media screen and (min-width:1024px) {
+.price__borderright {
+    border-right: 1px solid #CA7F13;
+}
+
+.price__borderright2 {
+    border-right: 1px solid #CA7F13;
+    border-bottom: none;
+}
+}
+
+.price-padding {
+    margin-left: 2.5%;
+}
+
+//faq
+.faq {
+    width: 85%;
+    height: auto;
+    margin: 0 auto 9% auto;
+    @media screen and (min-width: 1024px) {
+        width: 83.5%;
+    }
+
+    .title {
+        padding-bottom: 44px;
+        @media screen and (min-width: 1024px) {
+            padding-bottom: 5%;
+        }
+    }
+
+    .title::after {
+        content: "FAQ";
+        top: -23.5%;
+        left: -6.4%;
+        @media screen and (min-width: 1024px) {
+            top: 2%;
+            left: -10.4%;
+        }
+    }
+
+    &__inner {
+        background-color: #D4CEBE;
+        color: #CA7F13;
+        letter-spacing: 0.04em;
+        font-family: "Yu Mincho" , "游明朝体" , "YuMincho" , serif;
+        font-size: 14px;
+        margin-bottom: 6%;
+
+    @media screen and (min-width: 1024px) {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 18px;
+        letter-spacing: 0.04em;
+        margin-bottom: 25px;
+    }
+}
+}
+
+.collapse-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto 0 0;
+    text-align: left;
+    width: 90%;
+    padding: 5.5% 0 4% 0;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    line-height: 1.5;
+    padding-left: 14%;
+    position: relative;
+
+    @media screen and (min-width: 768px) {
+        height: 95px;
+        display: flex;
+        font-size: 18px;
+        justify-content: start;
+        align-items: center;
+        padding: 42px 60px 38px 60px;
+        font-size: 18px;
+    }
+
+    &::before {
+        display: inline-block;
+        content: "Q";
+        color: #CA7F13;
+        font-size: 18px;
+        line-height: 0.778;
+        letter-spacing: 0.04em;
+        left: 6%;
+        top: 25%;
+        position: absolute;
+
+        @media screen and (min-width: 768px) {
+            font-size:  24px;
+            line-height: 0.583;
+            letter-spacing: 0.04em;
+            left: 20px;
+            top: 44%;
+		}
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        right: -6%;
+        top: 50%;
+        background-color: #54372D;
+        height: 12px;
+        width: 12px;
+        clip-path: polygon(50% 100%, 0% 0%, 100% 0%); /* ▲（上向き） */
+        transform: translateY(-50%);
+        transition: transform 0.3s ease-in-out;
+        @media screen and (min-width: 768px) {
+            right: -8%;
+        }
+    }
+
+    .collapsed::after {
+        transform: translateY(-50%) rotate(180deg);
+    }
+
+    &:not(.collapsed)::after {
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%); /* ▼（下向き三角形） */
+    }
+}
+
+.collapse.show {
+    margin-bottom: 23px;
+}
+
+.card-body {
+    background-color: #D4CEBE;
+    border: none;
+    margin: 0;
+    padding: 0.5% 6% 4% 14%;
+    text-align: left;
+    position: relative;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    line-height: 1.5;
+
+    @media screen and (min-width: 768px) {
+    font-size: 18px;
+    letter-spacing: 0.72px;
+    padding-left: 61px;
+    padding-bottom: 3%;
+    margin-top: -12px;
+    height: auto;
+    }
+
+    &::before {
+        display: inline-block;
+        content: "A";
+        color: #CA7F13;
+        font-size: 18px;
+        line-height: 0.778;
+        letter-spacing: 0.04em;
+        left: 6%;
+        top: 4%;
+        position: absolute;
+        
+        @media screen and (min-width: 768px) {
+            font-size:  24px;
+            line-height: 0.583;
+            left: 22px;
+            top: 17%;
+		}
+    }
+}
+
+section.ask a {
+    position: relative;
+}
+
+section.ask a::after {
+    content: "＋";
+    position: absolute;
+    right: 10px;
+}
+
+section.ask a.collapsed::after {
+    content:"－";
+    position: absolute;
+    right: 10px;
+}
+
+//reserve
+.reserve {
+    width: 100%;
+    margin: 0 auto 27% auto;
+    font-family: "Marcellus", serif;
+    text-transform: uppercase;
+    @media screen and (min-width: 768px) {
+        margin: 0 auto;
+        padding-bottom: 8.3%;
+    }
+
+    &__inner {
+        background-image: url(img/reserve-link-sp.jpg);
+        width: 100%;
+        height: 200px;
+        position: relative;
+        z-index: 0;
+        display: table;
+
+        &--link {
+        width: 100%;
+        height: 200px;
+        display: table;
+        
+        &::after {
+            display: block;
+            content: "";
+            background: #464646 0% 0% no-repeat padding-box;
+            width: 100%;
+            height: 200px;
+            position: absolute;
+            z-index: -5;
+            top: 0;
+            right: 0;
+            opacity: 0.8;
+        }
+
+        &--title {
+            color: #CA7F13;
+            font-size: 48px;
+            letter-spacing: 0.1em;
+            width: 100%;
+            height: 200px;
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            padding-bottom: 6%;
+            
+            span.sub {
+                margin-top: -2%;
+            }
+
+            @media screen and (min-width: 768px) {
+                height: 400px;
+                padding: 3% 8px 0 0;
+                padding-left: 1%;
+
+                span.sub {
+                    margin: 4% auto 0 auto;
+                }
+            }
+        }
+    }
+}
+    &__list--link {
+        text-align: center;
+    }
+
+    @media screen and (min-width: 768px) {
+    &__inner {
+        background-image: url(img/reserve-link-pc.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 400px;
+
+        &--link {
+        width: 100%;
+        height: 400px;
+        
+        &::after {
+            height: 403px;
+        }
+
+        @media screen and (min-width: 1024px) {
+            &--title {
+                font-size: 80px;
+                line-height: 0.175;
+            }
+        }
+    }
+}
+}
+
+    &__list--link {
+        border-bottom: 1px solid #CA7F13;
+        width: 92.5%;
+        margin: 0 auto;
+        padding-top: 16%;
+        padding-bottom: 20%;
+        line-height: 1.3;
+        color: #CA7F13;
+        font-size: 48px;
+        letter-spacing: 0.1em;
+        @media screen and (min-width: 1024px) {
+            padding-top: 5%;
+            padding-bottom: 5%;
+            width: auto;
+            margin: 0 auto 0 5.5%;
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+    &__list {
+        margin: 19px auto 0 auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        &::after {
+            display: block;
+            content: "";
+            position: absolute;
+            border-bottom: 0.5px solid #CA7F13;
+            height: 0.5px;
+            margin: 0 auto;
+            bottom: -73px;
+        }
+        
+        &::before {
+            display: block;
+            content: "";
+            position: absolute;
+            border-right: 0.5px solid #CA7F13;
+            width: 0.5px;
+            height: 260px;
+            top: 20px;
+            right: 50%;
+            transform: translateX(50%);
+        }
+
+        &--link {
+            font-size: 72px;
+            letter-spacing: 0.1em;
+            text-align: center;
+            border-bottom: none;
+            position: relative;
+
+            &:first-child {
+                font-size: 80px;
+                letter-spacing: 0.1em;
+            }
+
+            
+        &:nth-child(2) {
+            padding: 5.5% 0 6.5% 17%;
+
+            span.sub {
+                margin: 9% auto 0 auto;
+            }
+        }
+        }
+    }
+}
+}
+
+span.sub {
+    display: block;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    font-family: "Yu Mincho" , "游明朝体" , "YuMincho" , serif;
+    font-weight: 600;
+
+    @media screen and (min-width: 1024px) {
+        font-size: 16px;
+        line-height: 0.875;
+        margin-top: 50px;
+    }
+}
+
+.reserve__list {
+    margin: 0 0 0 8%;
+    @media screen and (min-width: 1024px) {
+        margin: 1% auto 0 auto;
+        width: 83%;
+        padding-bottom: 3%;
+        border-bottom: 1px solid #CA7F13;
+    }
+
+span.sub {
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    font-family: "Yu Mincho" , "游明朝体" , "YuMincho" , serif;
+    font-weight: 600;
+    margin-top: -1px;
+    
+    @media screen and (min-width: 1024px) {
+        margin: 4% auto 0 auto;
+        font-size: 16px;
+    }
+}
+}
+
+//footer
+.footer {
+    padding-left: 1%;
+
+    &__h2 {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1%;
+        width: 70%;
+        margin: 0 auto 10% auto;
+    
+    @media screen and (min-width: 768px) {
+        width: 278px;
+        margin: 0 auto;
+        padding-left: 0.5%;
+        gap: 3.4%;
+    }
+
+    &--logo {
+
+        img {
+            width: 50px;
+            height: 50px;
+            @media screen and (min-width: 768px) {
+                width: 62px;
+                height: 62px;
+            }
+        }
+    }
+    
+    &--title {
+        color: #54372D;
+        font-size: 20px;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        padding-left: 1%;
+
+        @media screen and (min-width: 768px) {
+            font-size: 28px;
+            line-height: 1.25;
+            padding-left: 0;
+        }
+    }
+}
+    &__nav {
+
+        @media screen and (min-width: 768px) {
+            padding-bottom: 49px;
+        }
+
+    &--list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-left: 1%;
+        
+        &--response {
+            display: none;
+        }
+
+    &--inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1%;
+        font-size: 14px;
+        letter-spacing: 0.1em;
+        color: #54372D;
+        padding-bottom: 3%;
+        text-transform: capitalize;
+        width: 99%;
+
+        &:last-child {
+            padding-left: 5%;
+        } 
+
+        .uppercase {
+            text-transform: uppercase;
+        }
+    }
+    }
+}
+    @media screen and (min-width: 768px) {  
+        &__nav {
+            padding-bottom: 45px;
+
+        &--list {
+            display: none;
+
+            &--response {
+            display: block;
+            width: 100%;
+            padding-left: 0;
+            padding-right: 3%;
+            }
+
+            &--inner {
+            font-size: 20px;
+            letter-spacing: 0.1em;
+            line-height: 1.25;
+            width: auto;
+            padding-bottom: 12px;
+            padding-right: 0.8%;
+            width: 99%;
+
+
+            .footer-border {
+                padding-left: 17px;
+
+                &:after {
+                    display: inline;
+                    content: "";
+                    padding: 0 15px;
+                    border-right: 1px solid #54372d;
+                }
+            }
+
+            .footer-border:first-child {
+
+                &:after {
+                    padding-right: 20px;
+                }
+            }
+
+            .footer-border:last-child {
+
+                &:after {
+                    display: none;
+                }
+            }
+                        
+            .uppercase {
+                text-transform: uppercase;
+                padding-left: 0;
+            }
+            }
+        }
+    }
+}
+    
+
+    &__copylight {
+        color: #54372D;
+        font-size: 12px;
+        letter-spacing: 0.1em;
+        padding-bottom: 8px;
+        text-align: center;
+        margin-top: 6%;
+
+        @media screen and (min-width: 768px) {  
+        padding-top: 41px;
+        margin-top: 0;
+        }    
+    }
+}
+    p.space {
+        margin-top: 15px;
+        margin-left: 1%;
+        @media screen and (min-width: 768px) {  
+            margin-top: 22px;
+        }
+
+        .border-right {
+            margin-right: 3%;
+            padding-right: 0.5%;
+        }
+    }
+
+
+    .border-right {
+        text-transform: capitalize;
+        padding-right: 2%;
+    
+        &::after {
+        display: inline;
+        content: "";
+        border-right: 1px solid #54372D;
+        height: 16px;
+        padding-right: 12px;
+        bottom: 0;
+
+        @media screen and (min-width: 768px) {
+            padding-right: 19%;
+            width: 165px;
+        }
+    }
+}
+
+    .border-right-response {
+    @media screen and (min-width: 768px) {
+
+        &::after{
+        display: inline;
+        content: "";
+        border-right: 1px solid #54372D;
+        height: 16px;
+        padding-right: 31.5px;
+        }
+    }
+    }
+
+@media screen and (min-width: 768px) {
+.padding-left {
+    padding-left: 4.2%;
+    text-transform: capitalize;
+}
+}
+
+.margin-bottom {
+    margin-bottom: 100px;
+}
+
+.margin {
+    margin: 0 -5px 5px 5px;
+}
+
+.margin-right {
+    margin-right: 60px;
+}
+
+.padding {
+    padding-left: 0px;
+}
+
+.footer-margin {
+    margin: 23px 0 0 10px;
+}
