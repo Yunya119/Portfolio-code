@@ -1,4 +1,4 @@
-# Portfolio-code
+# corporate-site
 My Site
 wordpressにて実装。コーポレートサイトのトップページのみ載せています。
 学習で使ったためBEM記法や追加要素に多少のブレがありますが、今後整理予定です。
